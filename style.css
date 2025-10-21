@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background: #020024;
+  background: linear-gradient(
+    198deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(5, 5, 74, 1) 35%,
+    rgba(43, 66, 97, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.overlay {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.showBg {
+  background: rgba(0, 0, 0, 0.45);
+}
+.showModal {
+  position: absolute;
+  padding: 5px 15px;
+  background: none;
+  border: 1px solid rgb(255, 230, 0);
+  color: rgb(255, 230, 0);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 50ms ease-in-out;
+}
+.modalBox {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 5px rgb(55, 55, 55);
+  max-width: 350px;
+  margin: 20px;
+  padding: 10px;
+  position: absolute;
+}
+.hidden {
+  display: none;
+}
+.modalNav {
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+.modalNav .closeModal {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.modalText {
+  letter-spacing: 1px;
+}
+.modalText h3 {
+  margin: 10px 0;
+}
+.showModal:hover {
+  background: goldenrod;
+  color: #fff;
+}
